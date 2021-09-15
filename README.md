@@ -16,3 +16,16 @@ enable this option.
 
 **Please be aware** of potential security and privacy implications from cookies
 being exposed in the download command.
+
+## TODO
+Improvement idea  
+  - Add button that sends the curl command base64 encoded to a rest api server via http post
+  - Server rest api endpoint, for example python flask or via php (good incentive to learn php)
+  - Server returns short link to file, even before it's downloaded
+  - placeholder html is copied to the short link location, will be replaced, once the file is downloaded
+    - see https://stackoverflow.com/a/30568312
+    - show progress of file download in placeholder html
+    - indicate failed download in placeholder html, give option to restart download file (max 3 times)
+    - remove link for failed download after 1 week
+    - keep files for 2 weeks, give option to extend
+    - via api key auth, indefinite file storage
